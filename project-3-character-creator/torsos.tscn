@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c1jcnu7n1t5cg"]
+
+[ext_resource type="Texture2D" uid="uid://cg1mqt0jh7gh3" path="res://Racoon Torso.png" id="1_gegpi"]
+[ext_resource type="Texture2D" uid="uid://bad66jldnusxw" path="res://Bull Torso.png" id="2_fkar7"]
+
+[node name="Torsos" type="Node2D" unique_id=1103078142]
+
+[node name="RacoonTorso" type="Sprite2D" parent="." unique_id=2002510068]
+texture = ExtResource("1_gegpi")
+
+[node name="BullTorso" type="Sprite2D" parent="." unique_id=127175433]
+position = Vector2(-4, 0)
+texture = ExtResource("2_fkar7")
