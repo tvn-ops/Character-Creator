@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://bofeqx3stjd1y"]
 
 [ext_resource type="Texture2D" uid="uid://b0v6f3iew6jq3" path="res://Racoon Head.png" id="1_hukeq"]
+[ext_resource type="Script" uid="uid://ciukp3yxbgu2v" path="res://head.gd" id="1_pij62"]
 [ext_resource type="Texture2D" uid="uid://cvcq7inw0gauc" path="res://Bull Head.png" id="1_xe7ry"]
 
 [node name="Heads" type="Node2D" unique_id=1365109138]
+script = ExtResource("1_pij62")
 
 [node name="Racoon Head" type="Sprite2D" parent="." unique_id=217353256]
 position = Vector2(8, 0)

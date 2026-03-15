@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://r23oi03au1rr"]
 
 [ext_resource type="Texture2D" uid="uid://uh2k58h2maw3" path="res://Racoon Legs.png" id="1_5fopk"]
+[ext_resource type="Script" uid="uid://sd4o622d5lyh" path="res://legs.gd" id="1_lqteg"]
 [ext_resource type="Texture2D" uid="uid://c35sa33hie88k" path="res://Bull Legs.png" id="2_l3baa"]
 [ext_resource type="Texture2D" uid="uid://dwrxwyahx2wdb" path="res://Horse Legs.png" id="3_nqllu"]
 
 [node name="Legs" type="Node2D" unique_id=1282070061]
+script = ExtResource("1_lqteg")
 
 [node name="Racoon Legs" type="Sprite2D" parent="." unique_id=2023118452]
 texture = ExtResource("1_5fopk")
