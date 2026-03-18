@@ -129,3 +129,18 @@ offset_bottom = 72.0
 theme_override_fonts/font = ExtResource("2_0xm2m")
 theme_override_font_sizes/font_size = 32
 text = ">"
+
+[node name="Label" type="Label" parent="." unique_id=720536844]
+offset_left = 978.0
+offset_top = 310.0
+offset_right = 1018.0
+offset_bottom = 333.0
+theme_override_fonts/font = ExtResource("2_0xm2m")
+theme_override_font_sizes/font_size = 32
+
+[connection signal="pressed" from="Head/HeadButton1" to="Heads" method="_on_head_button_1_pressed"]
+[connection signal="pressed" from="Head/HeadButton2" to="Heads" method="_on_head_button_2_pressed"]
+[connection signal="pressed" from="Torso/TorsoButton1" to="Torsos" method="_on_torso_button_1_pressed"]
+[connection signal="pressed" from="Torso/TorsoButton2" to="Torsos" method="_on_torso_button_2_pressed"]
+[connection signal="pressed" from="Legs2/LegsButton1" to="Legs" method="_on_legs_button_1_pressed"]
+[connection signal="pressed" from="Legs2/LegsButton2" to="Legs" method="_on_legs_button_2_pressed"]
