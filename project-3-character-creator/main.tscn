@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bpupchlarrosi"]
 
+[ext_resource type="Script" uid="uid://45llo18xniam" path="res://main.gd" id="1_7mycd"]
 [ext_resource type="Texture2D" uid="uid://co1udy53juk80" path="res://Background.png" id="1_ig7tw"]
 [ext_resource type="FontFile" uid="uid://dv6fxju0phcjr" path="res://PixelPurl.ttf" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://bofeqx3stjd1y" path="res://head.tscn" id="3_lquwl"]
@@ -7,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://r23oi03au1rr" path="res://legs.tscn" id="5_272bh"]
 
 [node name="Main" type="Node2D" unique_id=1552652455]
+script = ExtResource("1_7mycd")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=426582126]
 position = Vector2(574.99994, 324)
@@ -130,7 +132,7 @@ theme_override_fonts/font = ExtResource("2_0xm2m")
 theme_override_font_sizes/font_size = 32
 text = ">"
 
-[node name="Label" type="Label" parent="." unique_id=720536844]
+[node name="Customization String" type="Label" parent="." unique_id=720536844]
 offset_left = 978.0
 offset_top = 310.0
 offset_right = 1018.0

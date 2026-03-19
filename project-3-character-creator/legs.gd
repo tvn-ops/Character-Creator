@@ -1,9 +1,9 @@
 extends Node2D
 var Legs = []
 var index = 0
-
+var customization = 1
 # Called when the node enters the scene tree for the first time.
-func _ready() -> void:
+func _ready():
 	Legs.append($"Racoon Legs")
 	Legs.append($"Bull Legs")
 	Legs.append($"Horse Legs")
@@ -12,16 +12,12 @@ func _ready() -> void:
 	Legs[0].visible = true
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
-	pass
-
-
 func _on_legs_button_1_pressed():
 	index -= 1
+	print(index)
 	for Leg in Legs:
-		if Legs[(index - 1)].visible == true:
-			Legs[(index - 1)].visible = false
+		if Legs[(index + 1)].visible == true:
+			Legs[(index + 1)].visible = false
 		Legs[index].visible = true
 	if index == -3 and index != 0:
 		index += 3
@@ -32,11 +28,15 @@ func _on_legs_button_1_pressed():
 
 func _on_legs_button_2_pressed():
 	index += 1
+	customization += 1
+	print(index)
 	for Leg in Legs:
-		if Legs[(index + 1)].visible == true:
-			Legs[(index + 1)].visible = false
+		if Legs[(index - 1)].visible == true:
+			Legs[(index - 1)].visible = false
+		Legs[index].visible = true
 	if index == 3 and index != 0:
 		index -= 4
+		customization = 1
 		for Leg in Legs:
 			Leg.visible = false
 		Legs[0].visible = true
