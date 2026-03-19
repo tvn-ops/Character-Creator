@@ -33,8 +33,8 @@ func _on_torso_button_2_pressed():
 		if Torsos[(index - 1)].visible == true:
 			Torsos[(index - 1)].visible = false
 		Torsos[index].visible = true
-	if index == 1 and index != 0:
-		index -= 2
+	if index > 1 and index != 0:
+		index = 0
 		for Torso in Torsos:
 			Torso.visible = false
 		Torsos[0].visible = true

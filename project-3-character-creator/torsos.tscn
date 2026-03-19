@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cg1mqt0jh7gh3" path="res://Racoon Torso.png" id="1_gegpi"]
 [ext_resource type="Script" uid="uid://b1ddu4ixovmfa" path="res://torsos.gd" id="1_u2jwf"]
 [ext_resource type="Texture2D" uid="uid://bad66jldnusxw" path="res://Bull Torso.png" id="2_fkar7"]
+[ext_resource type="Texture2D" uid="uid://cdksgwmtcsr3" path="res://Human Torso.png" id="4_nktes"]
 
 [node name="Torsos" type="Node2D" unique_id=1103078142]
 script = ExtResource("1_u2jwf")
@@ -13,3 +14,7 @@ texture = ExtResource("1_gegpi")
 [node name="BullTorso" type="Sprite2D" parent="." unique_id=127175433]
 position = Vector2(-4, 0)
 texture = ExtResource("2_fkar7")
+
+[node name="HumanTorso" type="Sprite2D" parent="." unique_id=694346169]
+position = Vector2(-5, 6)
+texture = ExtResource("4_nktes")

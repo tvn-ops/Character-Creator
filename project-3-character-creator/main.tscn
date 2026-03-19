@@ -37,12 +37,12 @@ text = "Load"
 position = Vector2(595, 280)
 scale = Vector2(3.2, 3.2)
 
-[node name="Torsos" parent="." unique_id=1103078142 instance=ExtResource("4_7mycd")]
-position = Vector2(622, 338)
-scale = Vector2(3.2, 3.2)
-
 [node name="Legs" parent="." unique_id=1282070061 instance=ExtResource("5_272bh")]
 position = Vector2(607, 380)
+scale = Vector2(3.2, 3.2)
+
+[node name="Torsos" parent="." unique_id=1103078142 instance=ExtResource("4_7mycd")]
+position = Vector2(622, 338)
 scale = Vector2(3.2, 3.2)
 
 [node name="Head" type="Label" parent="." unique_id=968376333]
@@ -135,11 +135,12 @@ text = ">"
 [node name="Customization String" type="Label" parent="." unique_id=720536844]
 offset_left = 978.0
 offset_top = 310.0
-offset_right = 1018.0
-offset_bottom = 333.0
+offset_right = 1037.0
+offset_bottom = 346.0
 theme_override_fonts/font = ExtResource("2_0xm2m")
 theme_override_font_sizes/font_size = 32
 
+[connection signal="pressed" from="Save" to="." method="_on_save_pressed"]
 [connection signal="pressed" from="Head/HeadButton1" to="Heads" method="_on_head_button_1_pressed"]
 [connection signal="pressed" from="Head/HeadButton2" to="Heads" method="_on_head_button_2_pressed"]
 [connection signal="pressed" from="Torso/TorsoButton1" to="Torsos" method="_on_torso_button_1_pressed"]

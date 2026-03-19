@@ -16,9 +16,9 @@ func _on_head_button_1_pressed():
 	for head in heads:
 		if heads[(index + 1)].visible == true:
 			heads[(index + 1)].visible = false
-	heads[index].visible = true
-	if index == -1 and index != 0:
-		index += 1
+		heads[index].visible = true
+	if index < -1 and index != 0:
+		index = 0
 		customization = 1
 		for head in heads:
 			head.visible = false
@@ -32,9 +32,9 @@ func _on_head_button_2_pressed():
 	for head in heads:
 		if heads[(index - 1)].visible == true:
 			heads[(index - 1)].visible = false
-	heads[index].visible = true
-	if index == 1 and index != 0:
-		index -= 2
+		heads[index].visible = true
+	if index > 1 and index != 0:
+		index = 0
 		customization = 1
 		for head in heads:
 			head.visible = false
