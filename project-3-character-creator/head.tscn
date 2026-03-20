@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b0v6f3iew6jq3" path="res://Racoon Head.png" id="1_hukeq"]
 [ext_resource type="Script" uid="uid://ciukp3yxbgu2v" path="res://head.gd" id="1_pij62"]
 [ext_resource type="Texture2D" uid="uid://cvcq7inw0gauc" path="res://Bull Head.png" id="1_xe7ry"]
+[ext_resource type="Texture2D" uid="uid://bsl35oii11j3t" path="res://Human Head.png" id="4_akhm5"]
 
 [node name="Heads" type="Node2D" unique_id=1365109138]
 script = ExtResource("1_pij62")
@@ -13,3 +14,7 @@ texture = ExtResource("1_hukeq")
 
 [node name="Bull Head" type="Sprite2D" parent="." unique_id=1113816125]
 texture = ExtResource("1_xe7ry")
+
+[node name="Human Head" type="Sprite2D" parent="." unique_id=734529621]
+position = Vector2(5, 2)
+texture = ExtResource("4_akhm5")

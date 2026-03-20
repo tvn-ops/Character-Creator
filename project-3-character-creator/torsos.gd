@@ -6,6 +6,7 @@ var customization = 1
 func _ready():
 	Torsos.append($RacoonTorso)
 	Torsos.append($BullTorso)
+	Torsos.append($HumanTorso)
 	for Torso in Torsos:
 		Torso.visible = false
 	Torsos[0].visible = true
@@ -17,8 +18,8 @@ func _on_torso_button_1_pressed():
 		if Torsos[(index + 1)].visible == true:
 			Torsos[(index + 1)].visible = false
 		Torsos[index].visible = true
-	if index == -1 and index != 0:
-		index += 1
+	if index == -3 and index != 0:
+		index += 3
 		for Torso in Torsos:
 			Torso.visible = false
 		Torsos[0].visible = true
@@ -29,12 +30,13 @@ func _on_torso_button_1_pressed():
 func _on_torso_button_2_pressed():
 	index += 1
 	print(index)
-	for Torso in Torsos:
-		if Torsos[(index - 1)].visible == true:
-			Torsos[(index - 1)].visible = false
-		Torsos[index].visible = true
-	if index > 1 and index != 0:
+	if index > 2 and index != 0:
 		index = 0
 		for Torso in Torsos:
 			Torso.visible = false
 		Torsos[0].visible = true
+	else:
+		for Torso in Torsos:
+			if Torsos[(index - 1)].visible == true:
+				Torsos[(index - 1)].visible = false
+			Torsos[index].visible = true

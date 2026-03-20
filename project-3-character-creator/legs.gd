@@ -30,13 +30,15 @@ func _on_legs_button_2_pressed():
 	index += 1
 	customization += 1
 	print(index)
-	for Leg in Legs:
-		if Legs[(index - 1)].visible == true:
-			Legs[(index - 1)].visible = false
-		Legs[index].visible = true
+	
 	if index > 2 and index != 0:
 		index = 0
 		customization = 1
 		for Leg in Legs:
 			Leg.visible = false
 		Legs[0].visible = true
+	else:
+		for Leg in Legs:
+			if Legs[(index - 1)].visible == true:
+				Legs[(index - 1)].visible = false
+			Legs[index].visible = true
