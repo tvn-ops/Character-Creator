@@ -149,9 +149,15 @@ offset_bottom = 420.0
 placeholder_text = "Customize"
 alignment = 1
 
-[connection signal="head_change" from="." to="Heads" method="_on_main_head_change"]
-[connection signal="legs_change" from="." to="Legs" method="_on_main_legs_change"]
-[connection signal="torso_change" from="." to="Torsos" method="_on_main_torso_change"]
+[connection signal="change_to_head1" from="." to="Heads" method="_on_main_change_to_head_1"]
+[connection signal="change_to_head2" from="." to="Heads" method="_on_main_change_to_head_2"]
+[connection signal="change_to_head3" from="." to="Heads" method="_on_main_change_to_head_3"]
+[connection signal="change_to_legs1" from="." to="Legs" method="_on_main_change_to_legs_1"]
+[connection signal="change_to_legs2" from="." to="Legs" method="_on_main_change_to_legs_2"]
+[connection signal="change_to_legs3" from="." to="Legs" method="_on_main_change_to_legs_3"]
+[connection signal="change_to_torso1" from="." to="Torsos" method="_on_main_change_to_torso_1"]
+[connection signal="change_to_torso2" from="." to="Torsos" method="_on_main_change_to_torso_2"]
+[connection signal="change_to_torso3" from="." to="Torsos" method="_on_main_change_to_torso_3"]
 [connection signal="pressed" from="Save" to="." method="_on_save_pressed"]
 [connection signal="pressed" from="Load" to="." method="_on_load_pressed"]
 [connection signal="pressed" from="Head/HeadButton1" to="." method="_on_head_button_1_pressed"]

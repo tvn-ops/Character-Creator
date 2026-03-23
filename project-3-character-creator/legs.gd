@@ -40,5 +40,19 @@ func _on_legs_button_2_pressed():
 			Legs[index].visible = true
 
 
-func _on_main_legs_change() -> void:
-	pass # Replace with function body.
+func _on_main_change_to_legs_1():
+	for Leg in Legs:
+		Leg.visible = false
+	Legs[0].visible = true
+
+
+func _on_main_change_to_legs_2():
+	for Leg in Legs:
+		Leg.visible = false
+	Legs[1].visible = true
+
+
+func _on_main_change_to_legs_3():
+	for Leg in Legs:
+		Leg.visible = false
+	Legs[2].visible = true

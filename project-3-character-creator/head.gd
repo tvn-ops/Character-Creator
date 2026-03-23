@@ -1,6 +1,7 @@
 extends Node2D
 var heads = []
 var index = 0
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	heads.append($"Racoon Head")
@@ -40,16 +41,19 @@ func _on_head_button_2_pressed():
 			heads[index].visible = true
 
 
-func _on_main_head_change():
-	if $"..".head_customization == 1:
-		for head in heads:
-			head.visible = false
-		heads[0].visible = true
-	elif $"..".main.head_customization == 2:
-		for head in heads:
-			head.visible = false
-		heads[1].visible = true
-	elif $"..".main.head_customization == 3:
-		for head in heads:
-			head.visible = false
-		heads[2].visible = true
+func _on_main_change_to_head_1():
+	for head in heads:
+		head.visible = false
+	heads[0].visible = true
+
+
+func _on_main_change_to_head_2():
+	for head in heads:
+		head.visible = false
+	heads[1].visible = true
+
+
+func _on_main_change_to_head_3():
+	for head in heads:
+		head.visible = false
+	heads[2].visible = true

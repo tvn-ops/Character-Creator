@@ -41,5 +41,19 @@ func _on_torso_button_2_pressed():
 			Torsos[index].visible = true
 
 
-func _on_main_torso_change() -> void:
-	pass # Replace with function body.
+func _on_main_change_to_torso_1():
+	for Torso in Torsos:
+		Torso.visible = false
+	Torsos[0].visible = true
+
+
+func _on_main_change_to_torso_2():
+	for Torso in Torsos:
+		Torso.visible = false
+	Torsos[1].visible = true
+
+
+func _on_main_change_to_torso_3():
+	for Torso in Torsos:
+		Torso.visible = false
+	Torsos[2].visible = true
