@@ -47,13 +47,29 @@ func _on_main_change_to_head_1():
 	heads[0].visible = true
 
 
+
+
 func _on_main_change_to_head_2():
 	for head in heads:
 		head.visible = false
 	heads[1].visible = true
 
 
+
+
 func _on_main_change_to_head_3():
 	for head in heads:
 		head.visible = false
 	heads[2].visible = true
+
+
+
+func _on_check_button_toggled(toggled_on: bool):
+	if toggled_on:
+		$"Racoon Head".self_modulate = Color(1, 0, 0)
+		$"Bull Head".self_modulate = Color(1, 0, 0)
+		$"Human Head".self_modulate = Color(1, 0, 0)
+	else:
+		$"Racoon Head".self_modulate = Color(1, 1, 1)
+		$"Bull Head".self_modulate = Color(1, 1, 1)
+		$"Human Head".self_modulate = Color(1, 1, 1)

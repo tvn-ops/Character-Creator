@@ -56,3 +56,14 @@ func _on_main_change_to_legs_3():
 	for Leg in Legs:
 		Leg.visible = false
 	Legs[2].visible = true
+
+
+func _on_check_button_toggled(toggled_on: bool):
+	if toggled_on:
+		$"Racoon Legs".self_modulate = Color(1, 0, 0)
+		$"Bull Legs".self_modulate = Color(1, 0, 0)
+		$"Horse Legs".self_modulate = Color(1, 0, 0)
+	else:
+		$"Racoon Legs".self_modulate = Color(1, 1, 1)
+		$"Bull Legs".self_modulate = Color(1, 1, 1)
+		$"Horse Legs".self_modulate = Color(1, 1, 1)

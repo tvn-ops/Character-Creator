@@ -57,3 +57,14 @@ func _on_main_change_to_torso_3():
 	for Torso in Torsos:
 		Torso.visible = false
 	Torsos[2].visible = true
+
+
+func _on_check_button_toggled(toggled_on: bool):
+	if toggled_on:
+		$RacoonTorso.self_modulate = Color(1, 0, 0)
+		$BullTorso.self_modulate = Color(1, 0, 0)
+		$HumanTorso.self_modulate = Color(1, 0, 0)
+	else:
+		$RacoonTorso.self_modulate = Color(1, 1, 1)
+		$BullTorso.self_modulate = Color(1, 1, 1)
+		$HumanTorso.self_modulate = Color(1, 1, 1)

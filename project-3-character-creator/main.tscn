@@ -149,6 +149,23 @@ offset_bottom = 420.0
 placeholder_text = "Customize"
 alignment = 1
 
+[node name="Label" type="Label" parent="." unique_id=911464656]
+anchors_preset = -1
+anchor_bottom = 10.833
+offset_left = 981.0
+offset_top = 50.0
+offset_right = 1091.0
+offset_bottom = 78.0
+theme_override_fonts/font = ExtResource("2_0xm2m")
+theme_override_font_sizes/font_size = 32
+text = "Make red?"
+
+[node name="CheckButton" type="CheckButton" parent="." unique_id=1465790053]
+offset_left = 1015.0
+offset_top = 76.0
+offset_right = 1059.0
+offset_bottom = 100.0
+
 [connection signal="change_to_head1" from="." to="Heads" method="_on_main_change_to_head_1"]
 [connection signal="change_to_head2" from="." to="Heads" method="_on_main_change_to_head_2"]
 [connection signal="change_to_head3" from="." to="Heads" method="_on_main_change_to_head_3"]
@@ -173,3 +190,6 @@ alignment = 1
 [connection signal="pressed" from="Legs2/LegsButton2" to="." method="_on_legs_button_2_pressed"]
 [connection signal="pressed" from="Legs2/LegsButton2" to="Legs" method="_on_legs_button_2_pressed"]
 [connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]
+[connection signal="toggled" from="CheckButton" to="Heads" method="_on_check_button_toggled"]
+[connection signal="toggled" from="CheckButton" to="Legs" method="_on_check_button_toggled"]
+[connection signal="toggled" from="CheckButton" to="Torsos" method="_on_check_button_toggled"]

@@ -17,11 +17,6 @@ func _ready() -> void:
 	$"Customization String".set_text(options)
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func process(_delta: float):
-	pass
-
-
 func _on_save_pressed():
 	saved = options
 	print(saved)
@@ -58,7 +53,7 @@ func _on_head_button_2_pressed():
 
 
 func _on_line_edit_text_submitted(new_text: String):
-	if new_text.is_valid_int() and int(new_text) <= 333:
+	if new_text.is_valid_int() and int(new_text) <= 333 and int(new_text) >= 111:
 		options = new_text
 		$"Customization String".set_text(options)
 		if new_text[0] == "1":
@@ -81,8 +76,10 @@ func _on_line_edit_text_submitted(new_text: String):
 			change_to_legs3.emit()
 	elif int(new_text) > 333:
 		print("Error: Number too big")
-	else:
+	elif !new_text.is_valid_int():
 		print("Error: Not a valid option")
+	else:
+		print("Error: Number too small")
 
 
 func _on_torso_button_1_pressed():
