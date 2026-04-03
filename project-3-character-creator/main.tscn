@@ -141,11 +141,12 @@ theme_override_fonts/font = ExtResource("2_0xm2m")
 theme_override_font_sizes/font_size = 32
 horizontal_alignment = 1
 
-[node name="LineEdit" type="LineEdit" parent="." unique_id=1267985800]
-offset_left = 988.0
-offset_top = 389.0
-offset_right = 1090.0
-offset_bottom = 420.0
+[node name="LineEdit" type="LineEdit" parent="Customization String" unique_id=1267985800]
+layout_mode = 0
+offset_left = -20.0
+offset_top = 54.0
+offset_right = 82.0
+offset_bottom = 85.0
 placeholder_text = "Customize"
 alignment = 1
 context_menu_enabled = false
@@ -162,11 +163,12 @@ theme_override_fonts/font = ExtResource("2_0xm2m")
 theme_override_font_sizes/font_size = 32
 text = "Make red?"
 
-[node name="CheckButton" type="CheckButton" parent="." unique_id=1465790053]
-offset_left = 1015.0
-offset_top = 76.0
-offset_right = 1059.0
-offset_bottom = 100.0
+[node name="CheckButton" type="CheckButton" parent="MakeRed" unique_id=1465790053]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 26.0
+offset_right = 78.0
+offset_bottom = 50.0
 
 [connection signal="change_to_head1" from="." to="Heads" method="_on_main_change_to_head_1"]
 [connection signal="change_to_head2" from="." to="Heads" method="_on_main_change_to_head_2"]
@@ -191,7 +193,7 @@ offset_bottom = 100.0
 [connection signal="pressed" from="Legs2/LegsButton1" to="Legs" method="_on_legs_button_1_pressed"]
 [connection signal="pressed" from="Legs2/LegsButton2" to="." method="_on_legs_button_2_pressed"]
 [connection signal="pressed" from="Legs2/LegsButton2" to="Legs" method="_on_legs_button_2_pressed"]
-[connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]
-[connection signal="toggled" from="CheckButton" to="Heads" method="_on_check_button_toggled"]
-[connection signal="toggled" from="CheckButton" to="Legs" method="_on_check_button_toggled"]
-[connection signal="toggled" from="CheckButton" to="Torsos" method="_on_check_button_toggled"]
+[connection signal="text_submitted" from="Customization String/LineEdit" to="." method="_on_line_edit_text_submitted"]
+[connection signal="toggled" from="MakeRed/CheckButton" to="Heads" method="_on_check_button_toggled"]
+[connection signal="toggled" from="MakeRed/CheckButton" to="Legs" method="_on_check_button_toggled"]
+[connection signal="toggled" from="MakeRed/CheckButton" to="Torsos" method="_on_check_button_toggled"]
