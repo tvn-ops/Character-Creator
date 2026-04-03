@@ -46,38 +46,38 @@ position = Vector2(622, 338)
 scale = Vector2(3.2, 3.2)
 
 [node name="Head" type="Label" parent="." unique_id=968376333]
-offset_left = 389.0
-offset_top = 228.0
-offset_right = 439.0
-offset_bottom = 256.0
+offset_left = 388.0
+offset_top = 229.0
+offset_right = 438.0
+offset_bottom = 257.0
 theme_override_fonts/font = ExtResource("2_0xm2m")
 theme_override_font_sizes/font_size = 32
 text = "Head"
 
 [node name="HeadButton1" type="Button" parent="Head" unique_id=740913890]
 layout_mode = 0
-offset_left = -4.0
-offset_top = 36.0
-offset_right = 16.0
-offset_bottom = 72.0
+offset_left = -3.0
+offset_top = 35.0
+offset_right = 17.0
+offset_bottom = 71.0
 theme_override_fonts/font = ExtResource("2_0xm2m")
 theme_override_font_sizes/font_size = 32
 text = "<"
 
 [node name="HeadButton2" type="Button" parent="Head" unique_id=1470268983]
 layout_mode = 0
-offset_left = 31.0
-offset_top = 36.0
-offset_right = 51.0
-offset_bottom = 72.0
+offset_left = 32.0
+offset_top = 35.0
+offset_right = 52.0
+offset_bottom = 71.0
 theme_override_fonts/font = ExtResource("2_0xm2m")
 theme_override_font_sizes/font_size = 32
 text = ">"
 
 [node name="Torso" type="Label" parent="." unique_id=1577989264]
-offset_left = 765.0
+offset_left = 758.0
 offset_top = 316.0
-offset_right = 825.0
+offset_right = 818.0
 offset_bottom = 344.0
 theme_override_fonts/font = ExtResource("2_0xm2m")
 theme_override_font_sizes/font_size = 32
@@ -85,9 +85,9 @@ text = "Torso"
 
 [node name="TorsoButton1" type="Button" parent="Torso" unique_id=413145454]
 layout_mode = 0
-offset_left = -4.0
+offset_left = 3.0
 offset_top = 36.0
-offset_right = 16.0
+offset_right = 23.0
 offset_bottom = 72.0
 theme_override_fonts/font = ExtResource("2_0xm2m")
 theme_override_font_sizes/font_size = 32
@@ -95,9 +95,9 @@ text = "<"
 
 [node name="TorsoButton2" type="Button" parent="Torso" unique_id=873641303]
 layout_mode = 0
-offset_left = 31.0
+offset_left = 38.0
 offset_top = 36.0
-offset_right = 51.0
+offset_right = 58.0
 offset_bottom = 72.0
 theme_override_fonts/font = ExtResource("2_0xm2m")
 theme_override_font_sizes/font_size = 32
@@ -133,10 +133,10 @@ theme_override_font_sizes/font_size = 32
 text = ">"
 
 [node name="Customization String" type="Label" parent="." unique_id=720536844]
-offset_left = 978.0
-offset_top = 310.0
-offset_right = 1037.0
-offset_bottom = 346.0
+offset_left = 1008.0
+offset_top = 335.0
+offset_right = 1067.0
+offset_bottom = 371.0
 theme_override_fonts/font = ExtResource("2_0xm2m")
 theme_override_font_sizes/font_size = 32
 horizontal_alignment = 1
@@ -148,8 +148,10 @@ offset_right = 1090.0
 offset_bottom = 420.0
 placeholder_text = "Customize"
 alignment = 1
+context_menu_enabled = false
+emoji_menu_enabled = false
 
-[node name="Label" type="Label" parent="." unique_id=911464656]
+[node name="MakeRed" type="Label" parent="." unique_id=911464656]
 anchors_preset = -1
 anchor_bottom = 10.833
 offset_left = 981.0
