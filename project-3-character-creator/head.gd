@@ -31,6 +31,7 @@ func _on_head_button_2_pressed():
 	print(index)
 	if index > 2 and index != 0:
 		index = 0
+		print(index)
 		for head in heads:
 			head.visible = false
 		heads[0].visible = true

@@ -12,7 +12,7 @@ signal change_to_legs1
 signal change_to_legs2
 signal change_to_legs3
 # Called when the node enters the scene tree for the first time.
-func _ready() -> void:
+func _ready():
 	options += customization
 	$"Customization String".set_text(options)
 
@@ -127,7 +127,7 @@ func _on_legs_button_1_pressed():
 		$"Customization String".set_text(options)
 
 
-func _on_legs_button_2_pressed() -> void:
+func _on_legs_button_2_pressed():
 	if int(customization[2]) >= 3 and int(customization[2]) != 0:
 		customization[2] = "1"
 		options = customization

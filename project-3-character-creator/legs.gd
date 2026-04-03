@@ -30,6 +30,7 @@ func _on_legs_button_2_pressed():
 	print(index)
 	if index > 2 and index != 0:
 		index = 0
+		print(index)
 		for Leg in Legs:
 			Leg.visible = false
 		Legs[0].visible = true
